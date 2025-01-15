@@ -1,41 +1,37 @@
-// TODO: Set item in localStorage
-localStorage.setItem("name", "John Doe");
+// Set item in localStorage
+localStorage.setItem('key', 'value');
 
-// TODO: Get item from localStorage
-localStorage.getItem("name");
+// Get item from localStorage
+const item = localStorage.getItem('key');
 
-// TODO: Remove item from localStorage
-localStorage.removeItem("name");
+// Remove item from localStorage
+localStorage.removeItem('key');
 
-// TODO: Clear all items from localStorage
+// Clear all items from localStorage
 localStorage.clear();
 
-// TODO: Add an object to localStorage
-localStorage.setItem(
-  "user",
-  JSON.stringify({ name: "John Doe", age: 21, hobby: "Reading" })
-);
+// Add an object to localStorage
+const obj = { name: 'John', age: 30 };
+localStorage.setItem('user', JSON.stringify(obj));
 
-// TODO: Get an object from localStorage
-JSON.parse(localStorage.getItem("user"));
+// Get an object from localStorage
+const storedObj = JSON.parse(localStorage.getItem('user'));
 
-// TODO: Set item in sessionStorage
-sessionStorage.setItem("name", "John Doe");
+// Set item in sessionStorage
+sessionStorage.setItem('sessionKey', 'sessionValue');
 
-// TODO: Get item from sessionStorage
-sessionStorage.getItem("name");
+// Get item from sessionStorage
+const sessionItem = sessionStorage.getItem('sessionKey');
 
-// TODO: Remove item from sessionStorage
-sessionStorage.removeItem("name");
+// Remove item from sessionStorage
+sessionStorage.removeItem('sessionKey');
 
-// TODO: Clear all items from sessionStorage
+// Clear all items from sessionStorage
 sessionStorage.clear();
 
-// TODO: Add an object to sessionStorage
-sessionStorage.setItem(
-  "user",
-  JSON.stringify({ name: "John Doe", age: 21, hobby: "Reading" })
-);
+// Add an object to sessionStorage
+const sessionObj = { product: 'Laptop', price: 1000 };
+sessionStorage.setItem('product', JSON.stringify(sessionObj));
 
-// TODO: Get an object from sessionStorage
-JSON.parse(sessionStorage.getItem("user"));
+// Get an object from sessionStorage
+const storedSessionObj = JSON.parse(sessionStorage.getItem('product'));
